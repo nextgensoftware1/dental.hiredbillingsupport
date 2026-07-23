@@ -5,7 +5,7 @@ import FAQ from "../components/FAQ";
 import CTA from "../components/CTA";
 import ResponsiveImage from "../components/ResponsiveImage";
 import { FiArrowRight, FiBarChart2, FiCalendar, FiClipboard, FiFileText, FiMonitor, FiPaperclip } from "react-icons/fi";
-// check
+// check auther
 export const metadata: Metadata = { title: "Dental Administrative Support" };
 
 const tasks = [
