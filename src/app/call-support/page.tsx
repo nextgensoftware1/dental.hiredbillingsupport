@@ -3,8 +3,9 @@ import Anim from "../components/Anim";
 import Stats from "../components/Stats";
 import FAQ from "../components/FAQ";
 import CTA from "../components/CTA";
+
 import ResponsiveImage from "../components/ResponsiveImage";
-import { FiArrowRight, FiBarChart2, FiBell, FiCornerUpRight, FiFileText } from "react-icons/fi";
+import { FiArrowRight, FiCheck, FiBarChart2, FiBell, FiCornerUpRight, FiFileText } from "react-icons/fi";
 
 export const metadata: Metadata = { title: "Dental Call Support" };
 
@@ -17,30 +18,46 @@ export default function CallSupport() {
   return (
     <>
       {/* HERO */}
-      <section
-        className="relative overflow-hidden hero-bg min-h-[680px] md:min-h-[720px]"
-        style={{ backgroundImage: `url(${IMG.hero})`, backgroundPosition: "center", backgroundSize: "cover" }}
-      >
-        <div className="absolute inset-0 bg-oxford/10" />
-        <div className="absolute top-[-100px] right-[-100px] w-[500px] h-[500px] rounded-full opacity-20 blur-[100px] bg-royal pointer-events-none" />
-        <div className="absolute bottom-[-80px] left-[5%] w-[400px] h-[400px] rounded-full opacity-15 blur-[90px] bg-carolina pointer-events-none" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-16 md:py-24 lg:py-28 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-          <div>
-            <p className="section-subtitle text-sm mb-3">Dental Call Support</p>
-            <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-oxford leading-[1.1] mb-5">
-              A Missed Call Is a <span className="text-royal">Missed Patient.</span>
-            </h1>
-            <p className="text-base md:text-lg text-silver leading-relaxed max-w-lg mb-7">
-              Every ring that goes to voicemail is a new patient who called someone else, a treatment plan never followed up, or a recall slot that stayed empty. We answer with dental context — not a script.
-            </p>
-            <div className="flex flex-wrap gap-3">
-              <a href="#cta" className="btn-gradient">Review Your Call Flow <FiArrowRight aria-hidden="true" /></a>
-              <a href="#inbound" className="btn-outline-blue">See How It Works</a>
-            </div>
-          </div>
+   <section
+  className="relative overflow-hidden hero-bg min-h-[680px] md:min-h-[720px]"
+  style={{
+    backgroundImage: `url(${IMG.hero})`,
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+  }}
+>
+  <div className="absolute inset-0 bg-oxford/10" />
+  <div className="absolute top-[-100px] right-[-100px] w-[500px] h-[500px] rounded-full opacity-20 blur-[100px] bg-royal pointer-events-none" />
+  <div className="absolute bottom-[-80px] left-[5%] w-[400px] h-[400px] rounded-full opacity-15 blur-[90px] bg-carolina pointer-events-none" />
 
-        </div>
-      </section>
+  <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-16 md:py-24 lg:py-28 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+    <div>
+      <p className="section-subtitle text-sm mb-3">
+        Patient Call Operations
+      </p>
+
+      <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-oxford leading-[1.1] mb-5">
+        A missed call isn't a missed call.<span className="text-royal">It's a missed new patient.</span>
+       
+        
+      </h1>
+
+      <p className="text-base md:text-lg text-black leading-relaxed max-w-lg mb-7">
+        Inbound and outbound, handled by a dental-trained team on your lines 
+        so no new patient reaches voicemail and no recall list goes cold.
+      </p>
+
+      <div className="flex flex-wrap gap-3">
+        <a href="#cta" className="btn-gradient">
+          Free Front-Desk Call-Flow Review
+          <FiArrowRight aria-hidden="true" />
+        </a>
+
+       
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* IMPACT */}
       <section className="py-16 md:py-24 px-4 sm:px-6 bg-cultured">
@@ -61,7 +78,108 @@ export default function CallSupport() {
           </div>
         </div>
       </section>
+<section className="py-20 bg-white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
+    {/* Top Note */}
+    <div className="mb-12 border-l-4 border-carolina pl-5">
+      <p className="text-sm text-silver leading-relaxed">
+        <span className="font-semibold uppercase tracking-wider text-carolina">
+          What changed · Service clarity
+        </span>{" "}
+        This page splits the old single "front desk relief" row into two
+        clearly-explained columns — Inbound and Outbound — the exact structure
+        the brief asked for.
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+      {/* Inbound */}
+      <div className="rounded-3xl border border-slate-200 bg-white p-8">
+        <h3 className="font-display text-3xl font-bold text-oxford mb-8">
+          Inbound call support
+        </h3>
+
+        <ul className="space-y-5">
+
+          <li className="flex items-center gap-3">
+            <span className="text-carolina">✓</span>
+            <span>New-patient calls, answered live</span>
+          </li>
+
+          <li className="flex items-center gap-3">
+            <span className="text-carolina">✓</span>
+            <span>Existing-patient scheduling questions</span>
+          </li>
+
+          <li className="flex items-center gap-3">
+            <span className="text-carolina">✓</span>
+            <span>Billing &amp; insurance questions</span>
+          </li>
+
+          <li className="flex items-center gap-3">
+            <span className="text-carolina">✓</span>
+            <span>Call documentation in the chart</span>
+          </li>
+
+          <li className="flex items-center gap-3">
+            <span className="text-carolina">✓</span>
+            <span>Smart call routing</span>
+          </li>
+
+          <li className="flex items-center gap-3">
+            <span className="text-carolina">✓</span>
+            <span>Missed-call follow-up within minutes</span>
+          </li>
+
+        </ul>
+      </div>
+
+      {/* Outbound */}
+      <div className="rounded-3xl border border-slate-200 bg-white p-8">
+        <h3 className="font-display text-3xl font-bold text-oxford mb-8">
+          Outbound call support
+        </h3>
+
+        <ul className="space-y-5">
+
+          <li className="flex items-center gap-3">
+            <span className="text-carolina">✓</span>
+            <span>Appointment reminders</span>
+          </li>
+
+          <li className="flex items-center gap-3">
+            <span className="text-carolina">✓</span>
+            <span>Hygiene recall &amp; reactivation</span>
+          </li>
+
+          <li className="flex items-center gap-3">
+            <span className="text-carolina">✓</span>
+            <span>Treatment-plan follow-up</span>
+          </li>
+
+          <li className="flex items-center gap-3">
+            <span className="text-carolina">✓</span>
+            <span>No-show recovery</span>
+          </li>
+
+          <li className="flex items-center gap-3">
+            <span className="text-carolina">✓</span>
+            <span>Insurance-detail follow-up</span>
+          </li>
+
+          <li className="flex items-center gap-3">
+            <span className="text-carolina">✓</span>
+            <span>Patient-balance follow-up</span>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
       {/* INBOUND */}
       <section id="inbound" className="py-16 md:py-24 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">

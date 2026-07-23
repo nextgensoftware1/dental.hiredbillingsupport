@@ -4,8 +4,7 @@ import FAQ from "./components/FAQ";
 import CTA from "./components/CTA";
 import ResponsiveImage from "./components/ResponsiveImage";
 import Link from "next/link";
-import { FiArrowRight, FiBarChart2, FiCheckCircle, FiClipboard, FiDollarSign, FiMonitor, FiPhone, FiX } from "react-icons/fi";
-
+import { FiArrowRight,FiShield , FiRefreshCw,FiBarChart2, FiCheckCircle, FiClipboard, FiDollarSign, FiMonitor, FiPhone, FiX } from "react-icons/fi";
 const IMG = {
   hero: "/assets/home_hero.webp",
   about: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=700&q=80",
@@ -36,17 +35,16 @@ export default function Home() {
         {/* Decorative blurs */}
         <div className="absolute top-[-100px] right-[-100px] w-[500px] h-[500px] rounded-full opacity-20 blur-[100px] bg-royal pointer-events-none" />
         <div className="absolute bottom-[-80px] left-[5%] w-[400px] h-[400px] rounded-full opacity-15 blur-[90px] bg-carolina pointer-events-none" />
-
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-16 md:py-24 lg:py-28">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             {/* Text */}
             <div>
-              <p className="section-subtitle text-sm mb-3">Welcome To HBS Dental</p>
+              <p className="section-subtitle text-sm mb-3">For dental practices, DSOs & cosmetic groups</p>
               <h1 className="font-display text-3xl sm:text-4xl lg:text-[52px] font-extrabold text-oxford leading-[1.1] mb-5 max-w-2xl">
-                Your Front Desk Is Buried. <span className="text-royal">We Are the Backup.</span>
+                You produced $180k last month. You collected $128k. <span className="text-royal">That gap is the problem.</span>
               </h1>
-              <p className="text-base md:text-lg text-silver leading-relaxed max-w-lg mb-7">
-                Hired Billing Support gives your dental practice a remote operations team that handles calls, verifies insurance, submits claims, follows up on AR, and supports your front desk — working inside your software every day.
+              <p className="text-base md:text-lg text-black leading-relaxed max-w-lg mb-7">
+                Treatment is happening. Patients are saying yes. Production looks great on the report. But somewhere between the chair and the bank, your collections are leaking — and your front desk is too buried to chase it.
               </p>
               <div className="flex flex-wrap gap-3">
                 <a href="#cta" className="btn-gradient">
@@ -65,8 +63,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ═══ PAIN TICKER ═══ */}
-      <section className="py-8 border-y border-light-gray bg-cultured overflow-hidden">
+ <section className="py-8 border-y border-light-gray bg-cultured overflow-hidden">
         <p className="text-center text-[11px] uppercase tracking-[0.2em] text-silver mb-5">What dental practices deal with every day</p>
         <div className="ticker-track flex gap-4">
           {[...pain, ...pain].map((p, i) => (
@@ -76,6 +73,145 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+
+           <section className="py-20 md:py-24 bg-white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6">
+
+    {/* Intro */}
+    <div className="max-w-4xl mx-auto">
+
+      <p className="section-subtitle mb-4">
+        The Tuesday morning everyone in dental knows
+      </p>
+
+      <h2 className="font-display text-3xl md:text-5xl font-extrabold text-oxford leading-tight mb-8">
+        You already know how this goes.
+      </h2>
+
+      <div className="space-y-6 text-lg leading-relaxed text-silver">
+
+        <p>
+          It's Tuesday. The schedule is packed. You're three minutes behind on every patient.
+        </p>
+
+        <p>
+          Your front desk is on hold with Delta Dental — again — verifying a benefit for a patient who walked in fifteen minutes ago. The new hygiene patient is in the waiting room with a clipboard nobody has time to review. And the phone keeps ringing, because a new patient is trying to book — but no one can pick up.
+        </p>
+
+        <p>
+          Meanwhile, last month's claims are still sitting. The PPO write-offs from January are confusing. The 90+ aging bucket hasn't been touched since the office manager went on leave. Two hygiene blocks went unfilled because nobody worked the recall list.
+        </p>
+
+        <p>
+          You produced great numbers last month. You know you did.
+        </p>
+
+      </div>
+
+      <h3 className="font-display text-2xl md:text-3xl font-bold text-success italic mt-10">
+        So why doesn't the bank account reflect it?
+      </h3>
+
+    </div>
+
+    {/* Copy Note */}
+
+   
+
+    {/* Problems */}
+
+    <div className="border border-light-gray rounded-2xl overflow-hidden mt-6 bg-white">
+
+      {[
+        {
+          no: "01",
+          title: "Production looks good. Collection doesn't.",
+          desc: "You produce $X and collect 70–80%. Benchmark is 98%. That gap is somebody's salary — maybe two.",
+          value: "20pt gap",
+        },
+        {
+          no: "02",
+          title: "Verification is burying your front desk.",
+          desc: "A payer call runs 12–18 minutes. Times 30 patients a day. They're on hold more than with patients.",
+          value: "~6 hrs/day",
+        },
+        {
+          no: "03",
+          title: "Every missed call is a missed new patient.",
+          desc: "Your desk can't answer while on hold with Delta. That $6k-lifetime-value patient just called the practice down the street.",
+          value: "$6k / patient",
+        },
+        {
+          no: "04",
+          title: "PPO write-offs are quietly bleeding you.",
+          desc: "You're writing off contracted amounts you should be appealing. Nobody has bandwidth to dig in.",
+          value: "$4–11k/mo",
+        },
+        {
+          no: "05",
+          title: "AR is aging in silence.",
+          desc: "Claims past 60 days collect 30% less. Yours sit in 90+ and nobody's working them.",
+          value: "-30% recovery",
+        },
+        {
+          no: "06",
+          title: "Hygiene recall is a leaky bucket.",
+          desc: "Every unfilled hygiene block is ~$200 lost. You have them every week. Do the math.",
+          value: "~$3–5k/mo",
+        },
+        {
+          no: "07",
+          title: "You keep hiring. They keep leaving.",
+          desc: "You trained the last biller for six months. She left for a $4/hr raise. Back to square one.",
+          value: "$22k / hire",
+        },
+      ].map((item) => (
+        <div
+          key={item.no}
+          className="grid grid-cols-12 gap-6 items-start px-6 py-6 border-b border-light-gray last:border-b-0 hover:bg-cultured transition-colors"
+        >
+          {/* Number */}
+
+          <div className="col-span-12 md:col-span-1">
+            <span className="font-display text-sm font-bold text-carolina">
+              {item.no}
+            </span>
+          </div>
+
+          {/* Content */}
+
+          <div className="col-span-12 md:col-span-8">
+
+            <h3 className="font-display text-xl font-bold text-oxford mb-2">
+              {item.title}
+            </h3>
+
+            <p className="text-silver leading-relaxed">
+              {item.desc}
+            </p>
+
+          </div>
+
+          {/* Value */}
+
+          <div className="col-span-12 md:col-span-3 md:text-right">
+
+            <span className="font-display text-lg font-bold text-danger">
+              {item.value}
+            </span>
+
+          </div>
+
+        </div>
+      ))}
+
+    </div>
+
+  </div>
+</section>
+      {/* ═══ PAIN TICKER ═══ */}
+     
 
       {/* ═══ ABOUT / SPLIT ═══ */}
       <section className="py-16 md:py-24 px-4 sm:px-6">
@@ -95,30 +231,193 @@ export default function Home() {
 
       {/* ═══ SERVICES ═══ */}
       <section id="services" className="py-16 md:py-24 px-4 sm:px-6 bg-cultured">
-        <div className="max-w-7xl mx-auto">
-          <Anim className="text-center mb-12">
-            <p className="section-subtitle">Our Services</p>
-            <h2 className="font-display text-2xl md:text-4xl font-bold">What We Provide</h2>
-            <p className="text-silver mt-3 max-w-xl mx-auto">Pick the services you need. Add more as your practice grows. We scale without adding headcount.</p>
-          </Anim>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {services.map((s, i) => (
-              <Anim key={i} delay={`d${(i % 6) + 1}`}>
-                <div className="bg-white border border-light-gray rounded-xl p-6 h-full min-h-[240px] flex flex-col hover:shadow-lg hover:-translate-y-1 hover:border-royal/30 transition-all duration-300">
-                  <s.icon className="mb-3 text-3xl text-royal" aria-hidden="true" />
-                  <h3 className="font-display text-lg font-bold text-oxford mb-2">{s.title}</h3>
-                  <p className="text-silver text-sm leading-relaxed mb-4 flex-1">{s.text}</p>
-                  {s.href && (
-                    <Link href={s.href} className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-royal hover:gap-3 transition-all">
-                      Learn more <FiArrowRight aria-hidden="true" />
-                    </Link>
-                  )}
-                </div>
-              </Anim>
-            ))}
-          </div>
+  <div className="max-w-7xl mx-auto">
+
+    <Anim className="text-center mb-10">
+      <p className="section-subtitle">
+        What we run for your practice
+      </p>
+
+      <h2 className="font-display text-2xl md:text-4xl font-bold text-oxford">
+        The full dental operational stack.
+      </h2>
+
+      <p className="text-silver mt-3 max-w-2xl mx-auto leading-relaxed">
+        Run one layer, or hand us the entire back office. Each links to a full breakdown.
+      </p>
+    </Anim>
+
+    {/* What Changed */}
+
+    
+
+    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+
+      {/* Card 1 */}
+
+      <Anim delay="d1">
+        <div className="bg-white border border-light-gray rounded-xl p-7 h-full flex flex-col hover:-translate-y-1 hover:shadow-xl hover:border-royal/30 transition-all duration-300">
+
+          <FiPhone className="text-3xl text-royal mb-4" />
+
+          <h3 className="font-display text-xl font-bold text-oxford mb-3">
+            Patient Call Operations
+          </h3>
+
+          <p className="text-silver leading-relaxed flex-1">
+            Inbound + outbound. New-patient capture, scheduling, reminders,
+            recall, treatment follow-up.
+          </p>
+
+          <Link
+            href="/call-support"
+            className="mt-6 inline-flex items-center gap-2 font-semibold text-royal hover:gap-3 transition-all"
+          >
+            View page <FiArrowRight />
+          </Link>
+
         </div>
-      </section>
+      </Anim>
+
+      {/* Card 2 */}
+
+      <Anim delay="d2">
+        <div className="bg-white border border-light-gray rounded-xl p-7 h-full flex flex-col hover:-translate-y-1 hover:shadow-xl hover:border-royal/30 transition-all duration-300">
+
+          <FiShield className="text-3xl text-royal mb-4" />
+
+          <h3 className="font-display text-xl font-bold text-oxford mb-3">
+            Insurance Verification
+          </h3>
+
+          <p className="text-silver leading-relaxed flex-1">
+            Full benefit breakdowns 48 hours before the appointment —
+            maximums, frequencies, downgrades, clauses.
+          </p>
+
+          <Link
+            href="/insurance-verification"
+            className="mt-6 inline-flex items-center gap-2 font-semibold text-royal hover:gap-3 transition-all"
+          >
+            View page <FiArrowRight />
+          </Link>
+
+        </div>
+      </Anim>
+
+      {/* Card 3 */}
+
+      <Anim delay="d3">
+        <div className="bg-white border border-light-gray rounded-xl p-7 h-full flex flex-col hover:-translate-y-1 hover:shadow-xl hover:border-royal/30 transition-all duration-300">
+
+          <FiDollarSign className="text-3xl text-royal mb-4" />
+
+          <h3 className="font-display text-xl font-bold text-oxford mb-3">
+            Dental RCM & Collections
+          </h3>
+
+          <p className="text-silver leading-relaxed flex-1">
+            Claims, AR follow-up, denial management, PPO write-off recovery,
+            payment posting.
+          </p>
+
+          <Link
+            href="/revenue-cycle-management"
+            className="mt-6 inline-flex items-center gap-2 font-semibold text-royal hover:gap-3 transition-all"
+          >
+            View page <FiArrowRight />
+          </Link>
+
+        </div>
+      </Anim>
+
+      {/* Card 4 */}
+
+      <Anim delay="d4">
+        <div className="bg-white border border-light-gray rounded-xl p-7 h-full flex flex-col hover:-translate-y-1 hover:shadow-xl hover:border-royal/30 transition-all duration-300">
+
+          <FiClipboard className="text-3xl text-royal mb-4" />
+
+          <h3 className="font-display text-xl font-bold text-oxford mb-3">
+            Practice Operations
+          </h3>
+
+          <p className="text-silver leading-relaxed flex-1">
+            Data entry, treatment-plan admin, scheduling support,
+            documentation, daily task queues, reporting.
+          </p>
+
+          <Link
+            href="/administrative-support"
+            className="mt-6 inline-flex items-center gap-2 font-semibold text-royal hover:gap-3 transition-all"
+          >
+            View page <FiArrowRight />
+          </Link>
+
+        </div>
+      </Anim>
+
+      {/* Card 5 */}
+
+      <Anim delay="d5">
+        <div className="bg-white border border-light-gray rounded-xl p-7 h-full flex flex-col hover:-translate-y-1 hover:shadow-xl hover:border-royal/30 transition-all duration-300">
+
+          <FiRefreshCw className="text-3xl text-royal mb-4" />
+
+          <h3 className="font-display text-xl font-bold text-oxford mb-3">
+            Hygiene & Recall
+          </h3>
+
+          <p className="text-silver leading-relaxed flex-1">
+            We work your recall list, reactivate inactive patients, and fill
+            open hygiene blocks — no new chair.
+          </p>
+
+          <Link
+            href="/recall-management"
+            className="mt-6 inline-flex items-center gap-2 font-semibold text-royal hover:gap-3 transition-all"
+          >
+            View page <FiArrowRight />
+          </Link>
+
+        </div>
+      </Anim>
+
+
+ {/* Card 5 */}
+
+      <Anim delay="d5">
+        <div className="bg-white border border-light-gray rounded-xl p-7 h-full flex flex-col hover:-translate-y-1 hover:shadow-xl hover:border-royal/30 transition-all duration-300">
+
+          <FiRefreshCw className="text-3xl text-royal mb-4" />
+
+          <h3 className="font-display text-xl font-bold text-oxford mb-3">
+            Not sure where to start?
+          </h3>
+
+          <p className="text-silver leading-relaxed flex-1">
+            Send last month's production + aging report. We'll show you exactly where the leak is — free.
+          </p>
+
+          <Link
+            href="/recall-management"
+            className="mt-6 inline-flex items-center gap-2 font-semibold text-royal hover:gap-3 transition-all"
+          >
+            View page <FiArrowRight />
+          </Link>
+
+        </div>
+      </Anim>
+
+
+    </div>
+
+    {/* Bottom CTA */}
+
+   
+
+  </div>
+</section>
 
       {/* ═══ HOW WE WORK ═══ */}
       <section className="py-16 md:py-24 px-4 sm:px-6">
@@ -240,7 +539,6 @@ export default function Home() {
         {q:"Is my patient data secure?",a:"HIPAA compliance is non-negotiable. BAA on every engagement. Encrypted connections. PHI-trained staff with minimum necessary access."},
         {q:"Can I start with one service?",a:"Absolutely. Most start with verification or AR follow-up. Adding services later is easy because the team already knows your practice."},
       ]} />
-
       <CTA title="Send Us Your Aging Report." em="We'll Show You the Gap." text="Book a 30-minute discovery call. Bring your production report and your biggest frustration. We'll tell you exactly where collections are leaking." />
     </>
   );

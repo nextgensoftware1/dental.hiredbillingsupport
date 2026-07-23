@@ -37,12 +37,12 @@ export default function Verification() {
         <div className="absolute bottom-[-80px] left-[5%] w-[400px] h-[400px] rounded-full opacity-15 blur-[90px] bg-carolina pointer-events-none" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-16 md:py-24 lg:py-28 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div>
-            <p className="section-subtitle text-sm mb-3">Insurance Verification</p>
+            <p className="section-subtitle text-sm mb-3">Insurance Verification & Benefits</p>
             <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-oxford leading-[1.1] mb-5">
-              Your Front Desk Spends 6 Hours a Day <span className="text-royal">On Hold.</span>
+              Every chart, verified 48 hours <span className="text-royal">before they sit down.</span>
             </h1>
-            <p className="text-base md:text-lg text-silver leading-relaxed max-w-lg mb-7">
-              Average verification call: 12–18 minutes. Multiply by 30 patients a day. Your front desk is on the phone more than with patients. We fix that.
+            <p className="text-base md:text-lg text-black leading-relaxed max-w-lg mb-7">
+             Maximums, deductibles, frequencies, downgrades, missing-tooth clauses, waiting periods — documented before the appointment, so treatment gets presented with real numbers.
             </p>
             <a href="#cta" className="btn-gradient">Free Verification Review <FiArrowRight aria-hidden="true" /></a>
           </div>
@@ -58,7 +58,108 @@ export default function Verification() {
           </Anim> */}
         </div>
       </section>
+<section className="py-20 bg-[#F5FCFC]">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
+    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+
+      {/* Card 1 */}
+      <div className="bg-white rounded-3xl border border-slate-200 p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+        <h3 className="font-display text-3xl font-bold text-oxford mb-8">
+          Eligibility &amp; benefits
+        </h3>
+
+        <ul className="space-y-5">
+
+          <li className="flex items-center gap-3">
+            <span className="text-carolina">✓</span>
+            <span>Active-coverage checks</span>
+          </li>
+
+          <li className="flex items-center gap-3">
+            <span className="text-carolina">✓</span>
+            <span>Deductibles &amp; annual maximums</span>
+          </li>
+
+          <li className="flex items-center gap-3">
+            <span className="text-carolina">✓</span>
+            <span>Frequency limits</span>
+          </li>
+
+          <li className="flex items-center gap-3">
+            <span className="text-carolina">✓</span>
+            <span>Waiting periods</span>
+          </li>
+
+        </ul>
+      </div>
+
+      {/* Card 2 */}
+      <div className="bg-white rounded-3xl border border-slate-200 p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+        <h3 className="font-display text-3xl font-bold text-oxford mb-8">
+          PPO plan detail
+        </h3>
+
+        <ul className="space-y-5">
+
+          <li className="flex items-center gap-3">
+            <span className="text-carolina">✓</span>
+            <span>Downgrade clauses</span>
+          </li>
+
+          <li className="flex items-center gap-3">
+            <span className="text-carolina">✓</span>
+            <span>Missing-tooth clauses</span>
+          </li>
+
+          <li className="flex items-center gap-3">
+            <span className="text-carolina">✓</span>
+            <span>Coverage notes in chart</span>
+          </li>
+
+          <li className="flex items-center gap-3">
+            <span className="text-carolina">✓</span>
+            <span>Fee-schedule confirmation</span>
+          </li>
+
+        </ul>
+      </div>
+
+      {/* Card 3 */}
+      <div className="bg-white rounded-3xl border border-slate-200 p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+        <h3 className="font-display text-3xl font-bold text-oxford mb-8">
+          Estimates &amp; auth
+        </h3>
+
+        <ul className="space-y-5">
+
+          <li className="flex items-center gap-3">
+            <span className="text-carolina">✓</span>
+            <span>Accurate treatment estimates</span>
+          </li>
+
+          <li className="flex items-center gap-3">
+            <span className="text-carolina">✓</span>
+            <span>Pre-authorization support</span>
+          </li>
+
+          <li className="flex items-center gap-3">
+            <span className="text-carolina">✓</span>
+            <span>Pre-determination tracking</span>
+          </li>
+
+          <li className="flex items-center gap-3">
+            <span className="text-carolina">✓</span>
+            <span>Same-day case acceptance</span>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</section>
       {/* BENEFIT GRID */}
       <section className="py-16 md:py-24 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">

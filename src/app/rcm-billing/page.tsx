@@ -35,12 +35,12 @@ export default function RCMBilling() {
         <div className="absolute bottom-[-80px] left-[5%] w-[400px] h-[400px] rounded-full opacity-15 blur-[90px] bg-carolina pointer-events-none" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-16 md:py-24 lg:py-28 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div>
-            <p className="section-subtitle text-sm mb-3">Dental RCM & Billing</p>
+            <p className="section-subtitle text-sm mb-3">Dental RCM & Collections</p>
             <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-oxford leading-[1.1] mb-5">
-              You Produced $180k. You Collected $128k. <span className="text-royal">That Gap Is the Problem.</span>
+              Close the gap between <span className="text-royal">production and collection.</span>
             </h1>
-            <p className="text-base md:text-lg text-silver leading-relaxed max-w-lg mb-7">
-              Treatment is happening. Patients are saying yes. But somewhere between the chair and the bank account, collections are leaking — claims sitting, denials piling up, AR aging.
+            <p className="text-base md:text-lg text-black leading-relaxed max-w-lg mb-7">
+            Clean claims out in 24 hours, every aging bucket worked, denials appealed by specialists, and PPO write-offs audited back into your account.
             </p>
             <div className="flex flex-wrap gap-3">
               <a href="#cta" className="btn-gradient">Fix Your Dental AR <FiArrowRight aria-hidden="true" /></a>
@@ -68,6 +68,110 @@ export default function RCMBilling() {
         </div>
       </section>
 
+            <section className="py-20 bg-white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6">
+
+    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+
+      {/* Card 1 */}
+      <div className="bg-white rounded-3xl border border-slate-200 p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+        <h3 className="font-display text-3xl font-bold text-oxford mb-8">
+          Claims &amp; posting
+        </h3>
+
+        <ul className="space-y-5">
+
+          <li className="flex items-center gap-3">
+            <span className="text-carolina">✓</span>
+            <span>CDT-coded, X-ray-attached submission</span>
+          </li>
+
+          <li className="flex items-center gap-3">
+            <span className="text-carolina">✓</span>
+            <span>Out within 24 hours</span>
+          </li>
+
+          <li className="flex items-center gap-3">
+            <span className="text-carolina">✓</span>
+            <span>98%+ clean-claim rate</span>
+          </li>
+
+          <li className="flex items-center gap-3">
+            <span className="text-carolina">✓</span>
+            <span>Daily EOB posting &amp; reconciliation</span>
+          </li>
+
+        </ul>
+      </div>
+
+      {/* Card 2 */}
+      <div className="bg-white rounded-3xl border border-slate-200 p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+        <h3 className="font-display text-3xl font-bold text-oxford mb-8">
+          AR &amp; denials
+        </h3>
+
+        <ul className="space-y-5">
+
+          <li className="flex items-center gap-3">
+            <span className="text-carolina">✓</span>
+            <span>Every bucket: 30/60/90/120+</span>
+          </li>
+
+          <li className="flex items-center gap-3">
+            <span className="text-carolina">✓</span>
+            <span>Payer calls &amp; re-submissions</span>
+          </li>
+
+          <li className="flex items-center gap-3">
+            <span className="text-carolina">✓</span>
+            <span>Specialist narrative appeals</span>
+          </li>
+
+          <li className="flex items-center gap-3">
+            <span className="text-carolina">✓</span>
+            <span>Categorized denial routing</span>
+          </li>
+
+        </ul>
+      </div>
+
+      {/* Card 3 */}
+      <div className="bg-white rounded-3xl border border-slate-200 p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+        <h3 className="font-display text-3xl font-bold text-oxford mb-8">
+          PPO &amp; visibility
+        </h3>
+
+        <ul className="space-y-5">
+
+          <li className="flex items-center gap-3">
+            <span className="text-carolina">✓</span>
+            <span>Write-off recovery audits</span>
+          </li>
+
+          <li className="flex items-center gap-3">
+            <span className="text-carolina">✓</span>
+            <span>Underpayment review</span>
+          </li>
+
+          <li className="flex items-center gap-3">
+            <span className="text-carolina">✓</span>
+            <span>Insurance aging review</span>
+          </li>
+
+          <li className="flex items-center gap-3">
+            <span className="text-carolina">✓</span>
+            <span>Production-vs-collection reporting</span>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+                
+      
       {/* PROD VS COLLECTION */}
       <section className="py-16 md:py-24 px-4 sm:px-6 bg-cultured">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
